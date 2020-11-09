@@ -2,9 +2,7 @@
 
 ## Introduction
 
-For this assignment, the aim was to create a score keeper widget for a game of ping pong. It should allow you to set the number of wins required, use buttons to increase the wins for a player, indicate when one player has won the required number of games and then chnage the score colours and disable the buttons, and then finally a buttom to reset the scores. We had to do the logic using Javascript and do the structure and styling using the **Bulma** CSS framework.
-
-Check out the Bulma documentation here: https://bulma.io/documentation/
+For this assignment, the aim was to create a score keeper widget for a game of ping pong. It should allow you to set the number of wins required, use buttons to increase the wins for a player, indicate when one player has won the required number of games and then chnage the score colours and disable the buttons, and then finally a buttom to reset the scores. We had to do the logic using Javascript and do the structure and styling using the **Bulma** CSS framework. Check out the Bulma documentation [here] (https://bulma.io/documentation/).
 
 Here is a link to the live web version: https://robbailiff.github.io/scorekeeper/
 
