@@ -28,7 +28,6 @@ function checkWin () {
     } else if (p2Score >= Number(gameNumber.value)) {
         addStyle (p2Text, p1Text);
         gameWon = true;
-
     }
 }
 
@@ -39,32 +38,32 @@ function addStyle (winner, loser) {
     // Turn p2Score red
     loser.classList.add('has-text-danger');
     // Disable add buttons
-    p1.disabled = true;
-    p2.disabled = true;
+    p1Button.disabled = true;
+    p2Button.disabled = true;
 }
 
 // Function to remove styling on a reset
 function removeStyle (winner, loser) {
     winner.classList.remove('has-text-success');
     loser.classList.remove('has-text-danger');
-    p1.disabled = false;
-    p2.disabled = false;
+    p1Button.disabled = false;
+    p2Button.disabled = false;
 }
 
 // Bottom button selectors
-const p1 = document.querySelector("#p1Button");
-const p2 = document.querySelector("#p2Button");
+const p1Button = document.querySelector("#p1Button");
+const p2Button = document.querySelector("#p2Button");
 const reset = document.querySelector("#reset");
 
 // Player 1 button function
-p1.addEventListener('click', function () {
+p1Button.addEventListener('click', function () {
     p1Score++;
     newScore(p1Score, p2Score);
     checkWin();
 })
 
 // Player 2 button function
-p2.addEventListener('click', function () {
+p2Button.addEventListener('click', function () {
     p2Score++;
     newScore(p1Score, p2Score);
     checkWin();
